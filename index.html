@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<title>GEH PRISM</title>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+<link href="base.css" rel="stylesheet">
+<link href="master.css" rel="stylesheet">
+<script src="master.js"></script>
+
+<style type="text/css">
+	html {
+		overflow-x: hidden;
+		overflow-y: hidden;
+	}
+	header.welcome {
+		background-image: url("assets/images/banners/banner-landingpage.jpg");
+		height: 100vh;
+	}
+	nav {
+		position: absolute;
+		top: 0;
+	}
+
+	.banner {
+		position: relative;
+		top: 22vw;
+		font-family: 'inspira';
+		padding: 30px;
+		cursor: default;
+	}
+	.guide {
+		position: absolute;
+		bottom: 3vh;
+		right: 3vw;
+		font-family: 'inspira';
+		font-size: 1.3rem;
+		/*color: rgb(76,104,136);*/
+		color: white;
+		opacity: 0.5;
+		cursor: default;
+	}
+	.btn {
+		border: 1px solid rgb(76,104,136);
+		background: transparent;
+	}
+	.btn a {
+		font-family: 'helvetica neue';
+		font-size: 1.3rem;
+		color: white;
+	}
+	.btn:hover {
+		background: rgb(76,104,136);
+	}
+
+	@media screen and (max-width:700px) {
+		.banner {
+			margin: 0 auto;
+			top: 30vh;
+			font-size: 2rem;
+			padding: 0;
+			text-align: center;
+		}
+		.headline {
+			font-size: 5rem;
+		}
+		.subheadline {
+			font-size: 1.7rem;
+		}
+		.btn {
+			margin: 0 auto;
+		}
+		.guide {
+			right: 0;
+			width: 100%;
+			font-size: 1rem;
+			text-align: center;
+		}
+	}
+</style>
+<body>
+<nav id="nav">
+	<ul class="topnav"  id="myTopnav">
+		<li class="col-xs-4">
+			<a href="/">
+				<img class="brand" src="../assets/ui/geh-mono-white.svg">
+			</a>
+		</li>
+		<li class="col-xs-2 icon"><a href="javascript:void(0);" onclick="toggleNav()">&#9776;</a></li>
+		<li class="col-xs-2"><a href="/_act-now"><div class="nav-wrap">Act Now</div></a></li>
+		<li class="col-xs-2"><a href="/_energy-revolution"><div class="nav-wrap">Energy Revolution</div></a></li>
+		<li class="col-xs-2"><a href="/_prism-power"><div class="nav-wrap">PRISM Power</div></a></li>
+		<li class="col-xs-2"><a href="/_our-earth"><div class="nav-wrap">Our Earth</div></a></li>
+	</ul>
+</nav>
+<header class="welcome">
+	<div class="row">
+		<div class="col-sm-8 col-xs-offset-1 banner">
+			<h1 class="headline">PRISM</h1>
+			<h2 class="subheadline">Power a new generation.</h2>
+			<audio id="audiotag" src="assets/audio/landing-page.mp3" preload="auto"></audio>
+			<div class="btn">
+				<a href="javascript:Guide();">
+					Let's Begin
+					<img class="audio" src="assets/ui/speaker-on-white.svg">
+					<span class="link-span"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="guide">
+		<span>Meet the new nuclear energy. Clean. Safe.</span>
+	</div>
+</header>
+</body>
+</html>
